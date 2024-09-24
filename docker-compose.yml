@@ -1,0 +1,35 @@
+﻿version: '3.8'
+
+services:
+  EclipeWorksTaskManager:
+    image: eclipeworkstaskmanager
+    build:
+      context: .
+      dockerfile: EclipeWorksTaskManager/Dockerfile
+    ports:
+      - "8080:8080" # Ajuste a porta conforme necessário
+    depends_on:
+      - db
+    environment:
+      CONNECTION_STRING: "Host=db;Database=taskmanagerdb;Username=eclipse_works;Password=EzDpWLic;Port=5432;"
+      JWT_KEY: "ThisIsASuperSecretKeyWithAtLeast32Characters"
+    networks:
+      - tasknetwork
+  db:
+    image: postgres:15
+    container_name: postgres-db
+    environment:
+      POSTGRES_DB: taskmanagerdb
+      POSTGRES_USER: eclipse_works
+      POSTGRES_PASSWORD: EzDpWLic
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - tasknetwork
+networks:
+  tasknetwork:
+volumes:
+  db_data:

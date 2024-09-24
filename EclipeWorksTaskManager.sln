@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EclipeWorksTaskManager", "EclipeWorksTaskManager\EclipeWorksTaskManager.csproj", "{BEDA3E22-08EF-48A5-B702-BD18602458A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CA241DF7-5D46-4F47-9F61-F805DA778E53}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - Presentation", "{EF0206B1-BBE4-4860-B7ED-3BE0A2F3BD38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Services", "02 - Services", "{957EAE4A-D28B-414F-BAE6-366AAEB8690E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Domain", "03 - Domain", "{494EC5BC-4C75-4C88-9A45-386BFBF94592}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Infrastructure", "04 - Infrastructure", "{35CD7365-7701-48B2-91EF-6C1057CB2C9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EclipeWorksTaskManager.Services", "EclipeWorksTaskManager.Services\EclipeWorksTaskManager.Services.csproj", "{E48F5602-A097-4E18-BD03-DC9BEC1ECDBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EclipeWorksTaskManager.Domain.Core", "EclipeWorksTaskManager.Domain.Core\EclipeWorksTaskManager.Domain.Core.csproj", "{B648FA60-3A36-4C67-9C08-398EFDDFD5D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EclipeWorksTaskManager.Infrastructure", "EclipeWorksTaskManager.Infrastructure\EclipeWorksTaskManager.Infrastructure.csproj", "{3158574C-6307-47B1-92D3-02A7C1B788BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Tests", "05 - Tests", "{578B36DA-AB45-4E78-A47C-F2DBCBA20087}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EclipeWorksTaskManager.Tests", "EclipeWorksTaskManager.Tests\EclipeWorksTaskManager.Tests.csproj", "{1204B234-AE15-4C40-830E-6C150B39166A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEDA3E22-08EF-48A5-B702-BD18602458A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEDA3E22-08EF-48A5-B702-BD18602458A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEDA3E22-08EF-48A5-B702-BD18602458A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEDA3E22-08EF-48A5-B702-BD18602458A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E48F5602-A097-4E18-BD03-DC9BEC1ECDBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E48F5602-A097-4E18-BD03-DC9BEC1ECDBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E48F5602-A097-4E18-BD03-DC9BEC1ECDBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E48F5602-A097-4E18-BD03-DC9BEC1ECDBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B648FA60-3A36-4C67-9C08-398EFDDFD5D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B648FA60-3A36-4C67-9C08-398EFDDFD5D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B648FA60-3A36-4C67-9C08-398EFDDFD5D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B648FA60-3A36-4C67-9C08-398EFDDFD5D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3158574C-6307-47B1-92D3-02A7C1B788BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3158574C-6307-47B1-92D3-02A7C1B788BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3158574C-6307-47B1-92D3-02A7C1B788BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3158574C-6307-47B1-92D3-02A7C1B788BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1204B234-AE15-4C40-830E-6C150B39166A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1204B234-AE15-4C40-830E-6C150B39166A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1204B234-AE15-4C40-830E-6C150B39166A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1204B234-AE15-4C40-830E-6C150B39166A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BEDA3E22-08EF-48A5-B702-BD18602458A5} = {EF0206B1-BBE4-4860-B7ED-3BE0A2F3BD38}
+		{E48F5602-A097-4E18-BD03-DC9BEC1ECDBB} = {957EAE4A-D28B-414F-BAE6-366AAEB8690E}
+		{B648FA60-3A36-4C67-9C08-398EFDDFD5D0} = {494EC5BC-4C75-4C88-9A45-386BFBF94592}
+		{3158574C-6307-47B1-92D3-02A7C1B788BB} = {35CD7365-7701-48B2-91EF-6C1057CB2C9F}
+		{1204B234-AE15-4C40-830E-6C150B39166A} = {578B36DA-AB45-4E78-A47C-F2DBCBA20087}
+	EndGlobalSection
+EndGlobal
